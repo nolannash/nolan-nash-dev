@@ -3,12 +3,10 @@ import NavBar from "./components/Nav"
 
 const IndexPage = () => {
   return (
-    <main >
-      {NavBar}
-    </main>
+    <div>
+      <NavBar></NavBar>
+    </div>
   )
 }
 
 export default IndexPage
-
-export const Head = () => <title>Home Page</title>
