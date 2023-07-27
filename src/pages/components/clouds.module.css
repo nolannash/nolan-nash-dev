@@ -1,6 +1,6 @@
 @keyframes moveclouds {
-	0% { margin-left: 100%; }
-	100% { margin-left: -100%; }
+	0%, 100% { opacity: 0; margin-left: 100%; }
+	50% { opacity: 1; margin-left: -100%; }
 	}
 
 	body {
@@ -10,9 +10,9 @@
 	#clouds {
 	padding: 100px 0;
 	background: #11334d;
-	background: -webkit-linear-gradient(top, #11334d 0%, #fff 100%);
-	background: -linear-gradient(top, #11334d 0%, #fff 100%);
-	background: -moz-linear-gradient(top, #11334d 0%, #fff 100%);
+	background: -webkit-linear-gradient(top, #11334d 45%, #fff 55%);
+	background: -linear-gradient(top, #11334d 45%, #fff 55%);
+	background: -moz-linear-gradient(top, #11334d 45%, #fff 55%);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -58,7 +58,7 @@
 	}
 
 	.x1 {
-	animation: moveclouds 15s linear infinite;
+	animation: moveclouds 20s linear infinite;
 	}
 
 	.x2 {
@@ -67,7 +67,7 @@
 	-moz-transform: scale(0.6);
 	transform: scale(0.6);
 	opacity: 0.6;
-	animation: moveclouds 25s linear infinite;
+	animation: moveclouds 30s linear infinite;
 	}
 
 	.x3 {
@@ -77,7 +77,7 @@
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
 	opacity: 0.8;
-	animation: moveclouds 20s linear infinite;
+	animation: moveclouds 25s linear infinite;
 	}
 
 	.x4 {
@@ -87,7 +87,7 @@
 	-moz-transform: scale(0.75);
 	transform: scale(0.75);
 	opacity: 0.75;
-	animation: moveclouds 18s linear infinite;
+	animation: moveclouds 23s linear infinite;
 	}
 
 	.x5 {
@@ -97,7 +97,7 @@
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
 	opacity: 0.8;
-	animation: moveclouds 20s linear infinite;
+	animation: moveclouds 26s linear infinite;
 	}
 
 
@@ -139,7 +139,7 @@
 	-moz-transform: scale(0.9);
 	transform: scale(0.9);
 	opacity: 0.9;
-	animation: moveclouds 17s linear infinite;
+	animation: moveclouds 29s linear infinite;
 	}
 
 	.x10 {
@@ -149,9 +149,9 @@
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
 	opacity: 0.8;
-	animation: moveclouds 23s linear infinite;
+	animation: moveclouds 28s linear infinite;
 	}
-	
+
 	.x11 {
 	left: 30px;
 	top: -680px;
@@ -161,7 +161,7 @@
 	opacity: 0.75;
 	animation: moveclouds 26s linear infinite;
 	}
-	
+
 	.x12 {
 	left: -200px;
 	top: -750px;
@@ -171,7 +171,7 @@
 	opacity: 0.7;
 	animation: moveclouds 24s linear infinite;
 	}
-	
+
 	.x13 {
 	left: 400px;
 	top: -820px;
@@ -199,5 +199,5 @@
 	-moz-transform: scale(0.75);
 	transform: scale(0.75);
 	opacity: 0.75;
-	animation: moveclouds 18s linear infinite;
+	animation: moveclouds 28s linear infinite;
 	}

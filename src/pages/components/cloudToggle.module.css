@@ -1,0 +1,56 @@
+/* cloudToggle.module.css */
+.cloudToggleLabel {
+  width: 40px;
+  height: 20px;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cloudSlider {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cloud {
+  width: 200px;
+  height: 60px;
+  background: var(--cloud-color, #fff);
+  border-radius: 200px;
+  position: relative;
+}
+
+.cloud:before,
+.cloud:after {
+  content: '';
+  position: absolute;
+  background: var(--cloud-color, #fff);
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  transform: rotate(30deg);
+}
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
+}
+
+/* Additional styles for cloud colors */
+.cloud-moving {
+  --cloud-color: #fff; /* White clouds when toggle is checked (clouds moving) */
+}
+
+.cloud-paused {
+  --cloud-color: #000; /* Black clouds when toggle is not checked (clouds paused) */
+}
