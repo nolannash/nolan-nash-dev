@@ -7,16 +7,17 @@ const HomePage = () => {
 
   const displaySelected = () => {}
   return (
-    <main>
-      <div className="bg-indigo-200">
-        <div className="relative z-10">
+    <main className="w-full h-full flex flex-col">
+      <div className="bg-indigo-200 flex-grow">
+        <div className="relative ">
           <NavBar setSelected={setSelected}></NavBar>
         </div>
-        <div className="relatize z-0"><Clouds></Clouds>
+        <div className="w-full h-full flex-grow position-relative pt-40">
+          <Clouds/>
         </div>
       </div>
     </main>
-  )
-}
+  );
+};
 
 export default HomePage
