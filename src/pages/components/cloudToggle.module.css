@@ -1,56 +1,57 @@
-/* cloudToggle.module.css */
-.cloudToggleLabel {
-  width: 40px;
-  height: 20px;
-  border-radius: 30px;
-  position: relative;
-  overflow: hidden;
+.toggle {
+  height: 163px;
+  width: 652px;
 }
 
-.cloudSlider {
-  width: 20px;
-  height: 20px;
+.toggle .overlap-group {
+  height: 177px;
+  position: relative;
+}
+
+.toggle .rectangle {
+  background-color: #d9d9d9;
+  border-radius: 100px;
+  height: 123px;
+  mix-blend-mode: multiply;
+  opacity: 0.01;
+  position: absolute;
+  width: 522px;
+}
+
+.toggle .cloud {
+  height: 177px;
+  mix-blend-mode: hard-light;
   position: absolute;
   top: 0;
+  width: 275px;
+}
+
+.toggle .off {
+  left: -7px;
+  top: -3px;
+  width: 659px;
+}
+
+.toggle .on {
+  left: 130px;
+  top: -9px;
+  width: 529px;
+}
+
+.toggle .overlap-group.off .rectangle {
+  left: 137px;
+  top: 43px;
+}
+
+.toggle .overlap-group.on .rectangle {
   left: 0;
-  transition: transform 0.3s ease-in-out;
+  top: 49px;
 }
 
-.cloud {
-  width: 200px;
-  height: 60px;
-  background: var(--cloud-color, #fff);
-  border-radius: 200px;
-  position: relative;
+.toggle .overlap-group.off .cloud {
+  left: 0;
 }
 
-.cloud:before,
-.cloud:after {
-  content: '';
-  position: absolute;
-  background: var(--cloud-color, #fff);
-  width: 100px;
-  height: 80px;
-  position: absolute;
-  top: -15px;
-  left: 10px;
-  border-radius: 100px;
-  transform: rotate(30deg);
-}
-
-.cloud:after {
-  width: 120px;
-  height: 120px;
-  top: -55px;
-  left: auto;
-  right: 15px;
-}
-
-/* Additional styles for cloud colors */
-.cloud-moving {
-  --cloud-color: #fff; /* White clouds when toggle is checked (clouds moving) */
-}
-
-.cloud-paused {
-  --cloud-color: #000; /* Black clouds when toggle is not checked (clouds paused) */
+.toggle .overlap-group.on .cloud {
+  left: 254px;
 }

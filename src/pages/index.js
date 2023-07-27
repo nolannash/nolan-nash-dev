@@ -21,7 +21,7 @@ const HomePage = () => {
     //     return <Home/>
     // }
   }
-
+  console.log(selected)
   const handleCloudsToggle = () => {
     setCloudsPaused((prevPaused) => !prevPaused);
   };

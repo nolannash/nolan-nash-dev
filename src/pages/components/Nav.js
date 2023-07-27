@@ -1,17 +1,7 @@
 import React from 'react';
-import * as styles from './cloudToggle.module.css'; 
+import  CloudToggle  from './CloudToggle';
 
-const NavBar = ({selected, setSelected, setCloudsPaused, cloudsPaused }) => {
-  const handleToggle = () => {
-    setCloudsPaused((prevPaused) => !prevPaused);
-  };
-
-  const navItems = [
-    { label: 'Home', key: 'home' },
-    { label: 'About Me', key: 'about' },
-    { label: 'Personal Projects', key: 'projects' },
-    { label: 'Contact', key: 'contact' },
-  ];
+const NavBar = ({selected, setSelected }) => {
 
   return (
     <header className="text-white body-font">
@@ -35,36 +25,15 @@ const NavBar = ({selected, setSelected, setCloudsPaused, cloudsPaused }) => {
           </svg>
           <span className="text-4xl ml-3">FullStack Software Developer</span>
         </a>
-        <nav className="md:ml-auto flex flex-wrap items-center justify-end text-xl">
-          {navItems.map((item) => (
-            <button
-              key={item.key}
-              className={`mr-5 hover:bg-${item.key === 'home' ? 'green-400' : item.key === 'about' ? 'amber-300' : item.key === 'projects' ? 'pink-400' : 'violet-400'} focus:bg-${item.key === 'home' ? 'lime-700' : item.key === 'about' ? 'orange-400' : item.key === 'projects' ? 'pink-700' : 'purple-800'} rounded-full p-2 shadow-2xl`}
-              onClick={() => setSelected(item.key)}
-            >
-              {item.label}
-            </button>
-          ))}
-<div className="flex items-center ml-3">
-            <input
-              type="checkbox"
-              id="toggleClouds"
-              className="hidden"
-              onChange={handleToggle}
-              checked={cloudsPaused}
-            />
-            <label
-              htmlFor="toggleClouds"
-              className={`w-12 h-6 rounded-full cursor-pointer ${styles.cloudToggleLabel}`} // Use the CSS module class for the label
-            >
-              <div className={`cloudSlider ${cloudsPaused ? styles.cloudPaused : styles.cloudMoving}`}>
-                <div className="cloud" /> {/* Use the cloud class for the cloud shape */}
-              </div>
-            </label>
-            <span className={`text-white font-medium ml-2 ${cloudsPaused ? styles.textPaused : styles.textMoving}`}>
-              {cloudsPaused ? 'Clouds Paused' : 'Clouds Moving'}
-            </span>
-          </div>
+        <nav className="md:ml-auto flex flex-wrap items-center text-white justify-center text-xl">
+          <button className="mr-5 hover:bg-pink-300 focus:bg-red-300 rounded-full p-2" onClick={() => setSelected('home')}>Home</button>
+          <button className="mr-5 hover:bg-lime-600 focus:bg-emerald-800 rounded-full p-2" onClick={() => setSelected('about')}>About Me</button>
+          <button className="mr-5 hover:bg-blue-400 focus:bg-sky-700 rounded-full p-2" onClick={() => setSelected('projects')}>Personal Projects</button>
+          <button className="mr-5 
+          hover:bg-amber-300 focus:bg-orange-400 rounded-full p-2" onClick={() => setSelected('blog')}>Blog</button>
+          <button className="mr-5 
+          hover:bg-violet-400 focus:bg-fuchsia-950 rounded-full p-2" onClick={() => setSelected('contact')}>Contact</button>
+          <CloudToggle stateProp="off" className="ml-5"/>
         </nav>
       </div>
     </header>
