@@ -1,20 +1,22 @@
 import * as React from "react"
 import NavBar from "./components/Nav"
-import Clouds from "../components/Clouds"
+import Clouds from "./components/Clouds"
 
-const IndexPage = () => {
+const HomePage = () => {
   const [selected, setSelected] = React.useState('Home')
 
   const displaySelected = () => {}
   return (
     <main>
-      <Clouds></Clouds>
-
-      <div className="relative z-10">
-        <NavBar setSelected={setSelected}></NavBar>
+      <div className="bg-indigo-200">
+        <div className="relative z-10">
+          <NavBar setSelected={setSelected}></NavBar>
+        </div>
+        <div className="relatize z-0"><Clouds></Clouds>
+        </div>
       </div>
     </main>
   )
 }
 
-export default IndexPage
+export default HomePage
