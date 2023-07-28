@@ -34,11 +34,10 @@ const HomePage = () => {
             setSelected={setSelected}
             setCloudsPaused={handleCloudsToggle}
             cloudsPaused={cloudsPaused}
-            selected={selected}
           />
         </div>
         <div className="w-full h-full flex-grow position-relative pt-40">
-          <Clouds cloudsPaused={cloudsPaused} />
+          <Clouds cloudsPaused={cloudsPaused} handleCloudsToggle={handleCloudsToggle}/>
         </div>
       </div>
     </main>

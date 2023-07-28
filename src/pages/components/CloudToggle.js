@@ -1,22 +1,17 @@
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import React from "react";
 import "./cloudToggle.module.css";
 
 export const CloudButton = ({ cloudsPaused, className, setCloudsPaused }) => {
-  const [isPaused, setIsPaused] = useState(cloudsPaused || false);
-
   const handleToggle = () => {
-    setIsPaused((prevState) => !prevState);
-    setCloudsPaused((prevState) => !prevState); // Update the cloudsPaused state in the parent component
+    setCloudsPaused();
   };
 
   return (
     <div className="box">
-      {isPaused === false && (
-        <div
-          className={`cloud-button state-on ${className}`}
-          onClick={handleToggle}
-        >
+
+      {cloudsPaused === false && (
+        <div className={`cloud-button state-on ${className}`} onClick={handleToggle}>
           <img
             className="on-cloud"
             alt="State on"
@@ -25,11 +20,8 @@ export const CloudButton = ({ cloudsPaused, className, setCloudsPaused }) => {
         </div>
       )}
 
-      {isPaused === true && (
-        <div
-          className={`cloud-button state-off ${className}`}
-          onClick={handleToggle}
-        >
+      {cloudsPaused === true && (
+        <div className={`cloud-button state-off ${className}`} onClick={handleToggle}>
           <img
             className="off-cloud"
             alt="Off cloud"
@@ -42,7 +34,7 @@ export const CloudButton = ({ cloudsPaused, className, setCloudsPaused }) => {
 };
 
 CloudButton.propTypes = {
-  stateProp: PropTypes.oneOf([true, false]),
+  cloudsPaused: PropTypes.bool.isRequired,
   className: PropTypes.string,
 };
 

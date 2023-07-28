@@ -1,8 +1,8 @@
 import React from 'react';
 import  {CloudButton}  from './CloudToggle';
 
-const NavBar = ({selected, setSelected, cloudsPaused,setCloudsPaused }) => {
-  console.log(cloudsPaused)
+const NavBar = ({setSelected, cloudsPaused,setCloudsPaused }) => {
+
   return (
     <header className="text-white body-font  justify-center object-center">
       <div className="container mx-auto flex items-center justify-between p-5">
@@ -36,7 +36,7 @@ const NavBar = ({selected, setSelected, cloudsPaused,setCloudsPaused }) => {
           
         </nav>
         <div className="ml-auto ">
-          {cloudsPaused == true ? <span>Clouds Off</span>:<span>Clouds On</span>}
+          {cloudsPaused === true ? <span>Clouds Off</span>:<span>Clouds On</span>}
           <CloudButton cloudsPaused={cloudsPaused}setCloudsPaused={setCloudsPaused}/>
         </div>
       </div>
