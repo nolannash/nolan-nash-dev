@@ -1,11 +1,11 @@
 import React from 'react';
-import  CloudToggle  from './CloudToggle';
+import  {CloudButton}  from './CloudToggle';
 
 const NavBar = ({selected, setSelected }) => {
 
   return (
-    <header className="text-white body-font">
-      <div className="container mx-auto flex flex-wrap items-center p-5 flex-col md:flex-row">
+    <header className="text-white body-font  justify-center object-center">
+      <div className="container mx-auto flex items-center justify-between p-5">
         <a
           className="flex title-font font-medium items-center text-white mb-4 md:mb-0 text-white md:mr-auto"
           href="/"
@@ -33,8 +33,11 @@ const NavBar = ({selected, setSelected }) => {
           hover:bg-amber-300 focus:bg-orange-400 rounded-full p-2" onClick={() => setSelected('blog')}>Blog</button>
           <button className="mr-5 
           hover:bg-violet-400 focus:bg-fuchsia-950 rounded-full p-2" onClick={() => setSelected('contact')}>Contact</button>
-          <CloudToggle stateProp="off" className="ml-5"/>
+          
         </nav>
+        <div className="ml-auto ">
+          <CloudButton stateProp="off" />
+        </div>
       </div>
     </header>
   );

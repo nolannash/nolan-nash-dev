@@ -1,57 +1,41 @@
-.toggle {
-  height: 163px;
-  width: 652px;
+/* Styles for CloudButton */
+.cloud-button {
+  height: 30px;
+  width: 40px;
+  cursor: pointer;
+  transition: opacity 1s; /* Add transition for opacity with a duration of 1 second */
 }
 
-.toggle .overlap-group {
-  height: 177px;
-  position: relative;
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
-.toggle .rectangle {
-  background-color: #d9d9d9;
-  border-radius: 100px;
-  height: 123px;
-  mix-blend-mode: multiply;
-  opacity: 0.01;
-  position: absolute;
-  width: 522px;
+.box .off-cloud-wrapper {
+  border: 0px none;
+  height: 30px;
+  overflow-x: hidden;
+  width: 40px;
 }
 
-.toggle .cloud {
-  height: 177px;
-  mix-blend-mode: hard-light;
+.box .off-cloud {
+  height: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  transition: opacity 1s; /* Add transition for opacity with a duration of 1 second */
+}
+
+.box .on-cloud {
+  height: 40px; /* Change height to 40px to match the height of the "on" cloud in the previous code */
+  left: 0;
   position: absolute;
   top: 0;
-  width: 275px;
+  width: 60px; /* Change width to 60px to match the width of the "on" cloud in the previous code */
+  transition: opacity 1s; /* Add transition for opacity with a duration of 1 second */
 }
 
-.toggle .off {
-  left: -7px;
-  top: -3px;
-  width: 659px;
-}
-
-.toggle .on {
-  left: 130px;
-  top: -9px;
-  width: 529px;
-}
-
-.toggle .overlap-group.off .rectangle {
-  left: 137px;
-  top: 43px;
-}
-
-.toggle .overlap-group.on .rectangle {
-  left: 0;
-  top: 49px;
-}
-
-.toggle .overlap-group.off .cloud {
-  left: 0;
-}
-
-.toggle .overlap-group.on .cloud {
-  left: 254px;
-}
+/* Optional: Add styles for the parent container and the text-white class if necessary */
