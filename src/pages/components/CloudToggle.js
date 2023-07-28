@@ -1,20 +1,21 @@
 import PropTypes from "prop-types";
-import React, { useReducer } from "react";
+import React, { useState } from "react";
 import "./cloudToggle.module.css";
 
-export const CloudButton = ({ stateProp, className }) => {
-  const [state, dispatch] = useReducer(reducer, {
-    state: stateProp || "on",
-  });
+export const CloudButton = ({ cloudsPaused, className, setCloudsPaused }) => {
+  const [isPaused, setIsPaused] = useState(cloudsPaused || false);
+
+  const handleToggle = () => {
+    setIsPaused((prevState) => !prevState);
+    setCloudsPaused((prevState) => !prevState); // Update the cloudsPaused state in the parent component
+  };
 
   return (
     <div className="box">
-      {state.state === "on" && (
+      {isPaused === false && (
         <div
           className={`cloud-button state-on ${className}`}
-          onClick={() => {
-            dispatch({ type: "click" });
-          }}
+          onClick={handleToggle}
         >
           <img
             className="on-cloud"
@@ -24,12 +25,10 @@ export const CloudButton = ({ stateProp, className }) => {
         </div>
       )}
 
-      {state.state === "off" && (
+      {isPaused === true && (
         <div
           className={`cloud-button state-off ${className}`}
-          onClick={() => {
-            dispatch({ type: "click" });
-          }}
+          onClick={handleToggle}
         >
           <img
             className="off-cloud"
@@ -42,19 +41,9 @@ export const CloudButton = ({ stateProp, className }) => {
   );
 };
 
-function reducer(state, action) {
-  switch (action.type) {
-    case "click":
-      return {
-        ...state,
-        state: state.state === "on" ? "off" : "on",
-      };
-    default:
-      return state;
-  }
-}
-
 CloudButton.propTypes = {
-  stateProp: PropTypes.oneOf(["off", "on"]),
+  stateProp: PropTypes.oneOf([true, false]),
   className: PropTypes.string,
 };
+
+export default CloudButton;

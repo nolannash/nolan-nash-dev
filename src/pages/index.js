@@ -6,7 +6,7 @@ const HomePage = () => {
   const [selected, setSelected] = React.useState('home')
   const [cloudsPaused, setCloudsPaused] = React.useState(false)
 
-
+  console.log(cloudsPaused)
   const displaySelected = (selected) => {
     // switch (selected) {
     //   case 'home':
@@ -23,7 +23,7 @@ const HomePage = () => {
   }
   console.log(selected)
   const handleCloudsToggle = () => {
-    setCloudsPaused((prevPaused) => !prevPaused);
+    setCloudsPaused((val) => !val);
   };
 
   return (
