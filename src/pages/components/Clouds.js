@@ -29,6 +29,14 @@ const Clouds = ({ cloudsPaused }) => {
         <div className={`p-5 ${styles.cloud} ${styles.x14}`} style={cloudStyles}></div>
         <div className={`p-5 ${styles.cloud} ${styles.x15}`} style={cloudStyles}></div>
       </div>
+      <div className="p-37">
+        <div className={`p-5 ${styles.cloud} ${styles.x11}`} style={cloudStyles}></div>
+        <div className={`p-5 ${styles.cloud} ${styles.x12}`} style={cloudStyles}></div>
+        <div className={`p-5 ${styles.cloud} ${styles.x13}`} style={cloudStyles}></div>
+        <div className={`p-5 ${styles.cloud} ${styles.x14}`} style={cloudStyles}></div>
+        <div className={`p-5 ${styles.cloud} ${styles.x15}`} style={cloudStyles}></div>
+      </div>
+    </div>
     </div>
   );
 };
