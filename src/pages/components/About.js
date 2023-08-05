@@ -47,7 +47,7 @@ const About = () => {
             <details>
             <summary className="text-5xl p-4">Get to know me</summary>
             <div className="text-3xl p-4 divide-y justify-items-center divide-emerald-800">
-                <img src={pfp} alt ='profile picture' className="inline-block h-60 w-50 rounded-full pb-2"/>
+                <img src={pfp} alt ='this is me' className="inline-block h-60 w-50 rounded-full pb-2"/>
                 <p>
                     My name is Nolan Nash, I use they/them pronouns and am based in
                     Oakland, California where I live with my partner and our two cats.
