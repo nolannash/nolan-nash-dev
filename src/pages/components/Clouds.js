@@ -7,7 +7,7 @@ const Clouds = ({ cloudsPaused }) => {
   };
 
   return (
-    <div id="clouds" >
+    <div id="clouds" className="z-1">
 
       <div className={`${styles.cloud} ${styles.x1}`} style={cloudStyles}></div>
 

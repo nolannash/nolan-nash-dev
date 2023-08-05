@@ -33,6 +33,7 @@
 	max-width: 25%;
 	max-height: 20%;
 	animation: moveclouds 25s linear infinite;
+	z-index: 0;
 	}
 
 	.cloud:before,
