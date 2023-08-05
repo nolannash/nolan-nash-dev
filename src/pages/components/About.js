@@ -31,11 +31,11 @@ const About = () =>{
                 <div className=" text-center" style={{ fontFamily: "'VT323', sans-serif" }}>
 
                     <details>
-                        <summary class=" text-5xl p-4">
+                        <summary className=" text-5xl p-4">
                             DropDown 1
                         </summary>
 
-                        <div class=" text-3xl p-4">
+                        <div className=" text-3xl p-4">
                             <p>
                                 Praesent posuere nisi vel diam congue varius. Praesent lacus nulla, congue nec rhoncus nec, suscipit et enim. Donec ultrices nec arcu et pharetra.
                             </p>

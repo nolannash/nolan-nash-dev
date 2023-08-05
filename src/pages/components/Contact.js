@@ -6,20 +6,6 @@ import githubIcon from '../../images/github.png';
 
 const Contact = () => {
     const [detailsOpen, setDetailsOpen] = useState(false);
-    const endpoint = "https://getform.io/f/208a7ae3-7e33-4238-b1f8-176309674c3d";
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(e.target);
-        const formDataObject = {};
-        formData.forEach((value, key) => {
-            formDataObject[key] = value;
-        });
-        console.log(formDataObject);
-
-        setDetailsOpen(false);
-    };
 
     return (
         <div className="
@@ -74,7 +60,7 @@ const Contact = () => {
                         </summary>
 
                         <div className="text-3xl p-4">
-                            <form method="post" action={endpoint} onSubmit={handleSubmit}>
+                            <form method="POST" action="https://getform.io/f/208a7ae3-7e33-4238-b1f8-176309674c3d">
                                 <div className="flex flex-col items-center">
                                     <label className="w-2/3">
                                         Name
@@ -148,9 +134,8 @@ const Contact = () => {
 
                                     <br />
 
-                                    <input
+                                    <button
                                         type="submit"
-                                        value="Submit"
                                         className="
                                             block w-1/2 
                                             mx-auto py-2 px-4 
@@ -159,7 +144,8 @@ const Contact = () => {
                                             text-white
                                             font-semibold 
                                             rounded-md"
-                                    />
+                                            onClick={()=> setDetailsOpen(false)}
+                                    >Submit</button>
                                 </div>
 
                             </form>
