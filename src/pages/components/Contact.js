@@ -22,10 +22,9 @@ const Contact = () => {
             outline-fuchsia-950 
             border-4 
             border-fuchsia-950 
-            bg-violet-600 
             bg-opacity-75 
             shadow-2xl 
-            shadow-violet-400/40"
+            "
             style={{ fontFamily: "'VT323', sans-serif" }}
         >
 

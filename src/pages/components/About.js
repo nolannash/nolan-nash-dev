@@ -10,7 +10,6 @@ const About = () => {
             left-0 
             h-full 
             items-center 
-            bg-transparent 
             rounded-3xl 
             p-8 
             outline-double 
@@ -18,10 +17,7 @@ const About = () => {
             outline-emerald-800
             border-8 
             border-emerald-800 
-            bg-lime-300 
-            bg-opacity-75 
-            shadow-2xl 
-            shadow-emerald-800/30"
+            shadow-2xl"
         style={{ fontFamily: "'VT323', sans-serif" }}
     >
         <h1 className="text-6xl font-bold text-center text-white pb-4">About</h1>
@@ -29,7 +25,7 @@ const About = () => {
         <div className="
         overflow-auto 
         bg-opacity-25 
-        rounded-xl 
+        rounded-3xl 
         grid 
         grid-cols-3 
         gap-6 
@@ -46,6 +42,7 @@ const About = () => {
         style={{ fontFamily: "'VT323', sans-serif", maxHeight: 'calc(100vh - 450px)', overflowY: 'auto' }}>
             <details>
             <summary className="text-5xl p-4">Get to know me</summary>
+
             <div className="text-3xl p-4 divide-y justify-items-center divide-emerald-800">
                 <img src={pfp} alt ='this is me' className="inline-block h-60 w-50 rounded-full pb-2"/>
                 <p>
@@ -73,7 +70,6 @@ const About = () => {
             </details>
         </div>
 
-
         <div className="text-center  
         hover:bg-green-400 
         hover:rounded-3xl 
@@ -81,7 +77,7 @@ const About = () => {
         hover:shadow-2xl" 
         style={{ fontFamily: "'VT323', sans-serif", maxHeight: 'calc(100vh - 450px)', overflowY: 'auto' }}>
             <details>
-            <summary className="p-4 text-5xl">Technologies & Skills</summary>
+            <summary className="p-4 text-5xl">Technologies and Skills</summary>
             <div className="text-3xl p-4">
                 <ul className="list-none list-inside ">
                     <li className="p-4">
@@ -91,16 +87,16 @@ const About = () => {
                                     <li className="p-2">
                                         <details>
                                             <summary>
-                                                Front End Development
+                                                Front End
                                             </summary>
                                                 <ul>
                                                     <li className="p-2">item 1</li>
                                                     <li className="p-2">item 1</li>
                                                 </ul>
                                         </details></li>
-                                    <li className="p-2">\
+                                    <li className="p-2">
                                         <details>
-                                            <summary>Back End Development</summary>
+                                            <summary>Back End</summary>
                                                 <ul>
                                                     <li className="p-2">item 1</li>
                                                     <li className="p-2">item 1</li>
@@ -123,26 +119,54 @@ const About = () => {
             </details>
         </div>
 
-
         <div className="text-center  
         hover:bg-green-400 
         hover:rounded-3xl 
         hover:bg-opacity-25 
-        hover:shadow-2xl" 
+        hover:shadow-2xl " 
         style={{ fontFamily: "'VT323', sans-serif", maxHeight: 'calc(100vh - 450px)', overflowY: 'auto' }}>
 
             <details>
             <summary className="p-4 text-5xl">Current Happenings</summary>
             <div className="text-3xl p-4 divide-y divide-emerald-800">
 
-                <p className="">
-                    What I'm up to, project updates, what I'm learning about, planned projects and more
-                </p>
+            <ul className="list-none list-inside ">
+                    <li className="p-4">
+                        <details>
+                            <summary>In Progress</summary>
+                                <ul>
 
-                <ul className="list-none list-outside">
-                <li>List Item 1</li>
-                <li>List Item 2</li>
-                </ul>
+                                    <li className="p-2">item 1</li>
+                                    <li className="p-2">item 1</li>
+
+                                </ul>
+                            </details>
+                        </li>
+                        <li className="p-4">
+                            <details>
+                                <summary>Planned Projects</summary>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                            </details>
+                        </li>
+                        <li className="p-4">
+                            <details>
+                                <summary>Learning Goals</summary>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                            </details>
+                        </li>
+                        <li className="p-4">
+                            <details>
+                                <summary>Life Stuff</summary>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                            </details>
+                        </li>
+                    </ul>
             </div>
             </details>
         </div>

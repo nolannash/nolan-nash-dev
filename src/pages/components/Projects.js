@@ -17,8 +17,6 @@ const Projects = () => {
         outline-sky-700 
         border-4 
         border-sky-700 
-        bg-blue-300 
-        bg-opacity-75 
         shadow-2xl 
         shadow-pink-400/30 `}
         style={{ fontFamily: "'VT323', sans-serif"}}>
@@ -27,49 +25,10 @@ const Projects = () => {
             Portfolio
         </h1>
 
-        <div className="overflow-auto shadow-2xl" style={{ maxHeight: 'calc(100vh - 400px)' }}>
+        <div className="overflow-auto shadow-2xl rounded-3xl" style={{ maxHeight: 'calc(100vh - 400px)' }}>
 
         <p className="text-3xl text-center" style={{ fontFamily: "'VT323', sans-serif" }}>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
-        test 
-        <br/>
+            I unfortunately do not have any deployed or playable applications or sites right now however a fully list of my in progress and upcoming projects is available in the <strong>about</strong> section
         </p>
         </div>
     </div>
