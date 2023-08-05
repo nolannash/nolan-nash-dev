@@ -3,36 +3,33 @@ import pfp from '../../images/IMG-1069.jpg'
 
 const About = () => {
     return (
-    <div
-        className="
-            relative 
-            top-0 
-            left-0 
-            h-full 
-            items-center 
-            rounded-3xl 
-            p-8 
-            outline-double 
-            outline-4
-            outline-emerald-800
-            border-8 
-            border-emerald-800 
-            shadow-2xl"
-        style={{ fontFamily: "'VT323', sans-serif" }}
-    >
-        <h1 className="text-6xl font-bold text-center text-white pb-4">About</h1>
+        <div className="relative 
+        top-0 
+        left-0 
+        h-full 
+        items-center
+        rounded-3xl 
+        p-8 
+        outline-double 
+        outline-4 
+        outline-emerald-800 
+        border-8 
+        border-emerald-800 
+        shadow-2xl" 
+        style={{ fontFamily: "'VT323', sans-serif"}}>
 
-        <div className="
-        overflow-auto 
+        <h1 className="text-6xl font-bold text-center text-white pb-4">
+            About
+        </h1>
+
+        <div className="overflow-auto 
         bg-opacity-25 
         rounded-3xl 
-        grid 
-        grid-cols-3 
+        grid grid-cols-3 
         gap-6 
         shadow-2xl 
-        inner-shadow-2xl"
-        style={{ maxHeight: 'calc(100vh - 400px)', paddingLeft: "3rem", paddingRight: "3rem" }}
-        >
+        inner-shadow-2xl" 
+        style={{ maxHeight: 'calc(100vh - 400px)', paddingLeft: "3rem", paddingRight: "3rem" }}>
 
         <div className="text-center 
         hover:bg-green-400 
@@ -40,34 +37,21 @@ const About = () => {
         hover:bg-opacity-25 
         hover:shadow-2xl" 
         style={{ fontFamily: "'VT323', sans-serif", maxHeight: 'calc(100vh - 450px)', overflowY: 'auto' }}>
+
             <details>
-            <summary className="text-5xl p-4">Get to know me</summary>
+                <summary className="text-5xl p-4">Get to know me</summary>
+                <div className="text-3xl p-4 divide-y justify-items-center divide-emerald-800">
 
-            <div className="text-3xl p-4 divide-y justify-items-center divide-emerald-800">
                 <img src={pfp} alt ='this is me' className="inline-block h-60 w-50 rounded-full pb-2"/>
-                <p>
-                    My name is Nolan Nash, I use they/them pronouns and am based in
-                    Oakland, California where I live with my partner and our two cats.
-
-                    <br className="p-4"/>
-
-                    While I only recently become a software developer,
-                    I always loved solving problems, logic games, puzzles and learning new things. 
-                    That has made the transition to a software developer more than easy but incredibly fun. 
-
-                    <br className="p-4"/>
-
-                    I spend my free time going on walks, reading, cooking
-                    doing other crafts like woodworking or crochet, playing video games or 
-                    spending time with friends and family.
-
-                    <br className="p-4"/>
-
-                    
-
-                </p>
-            </div>
-            </details>
+                    <p>
+                        My name is Nolan Nash, I use they/them pronouns and am based in Oakland, California where I live with my partner and our two cats.
+                        <br />
+                        While I only recently become a software developer, I always loved solving problems, logic games, puzzles, and learning new things. That has made the transition to a software developer more than easy but incredibly fun.
+                        <br />
+                        I spend my free time going on walks, reading, cooking, doing other crafts like woodworking or crochet, playing video games, or spending time with friends and family.
+                        </p>
+                    </div>
+                </details>
         </div>
 
         <div className="text-center  
