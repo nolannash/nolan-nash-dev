@@ -12,7 +12,12 @@ const Clouds = ({ cloudsPaused }) => {
       <div className={`p-5 ${styles.cloud} ${styles.x2}`} style={cloudStyles}></div>
       <div className={`p-5 ${styles.cloud} ${styles.x3}`} style={cloudStyles}></div>
       <div className={`p-5 ${styles.cloud} ${styles.x4}`} style={cloudStyles}></div>
-      <div className={`p-5 ${styles.cloud} ${styles.x5}`} style={cloudStyles}></div>
+      <div className={` ${styles.cloud} ${styles.x5}`} style={cloudStyles}></div>
+      <div className={` ${styles.cloud} ${styles.x1}`} style={cloudStyles}></div>
+      <div className={` ${styles.cloud} ${styles.x2}`} style={cloudStyles}></div>
+      <div className={` ${styles.cloud} ${styles.x3}`} style={cloudStyles}></div>
+      <div className={` ${styles.cloud} ${styles.x4}`} style={cloudStyles}></div>
+      <div className={` ${styles.cloud} ${styles.x5}`} style={cloudStyles}></div>
 
       <div className="p-7">
         <div className={`p-5 ${styles.cloud} ${styles.x6}`} style={cloudStyles}></div>
@@ -36,6 +41,8 @@ const Clouds = ({ cloudsPaused }) => {
         <div className={`p-5 ${styles.cloud} ${styles.x14}`} style={cloudStyles}></div>
         <div className={` ${styles.cloud} ${styles.x15}`} style={cloudStyles}></div>
       </div>
+
+      
     </div>
 
   );
