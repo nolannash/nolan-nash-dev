@@ -39,7 +39,7 @@ const Contact = () => {
                 Contact Me:
             </h1>
 
-            <div className="overflow-auto" style={{ maxHeight: 'calc(100vh - 400px)' }}>
+            <div className="overflow-auto shadow-2xl" style={{ maxHeight: 'calc(100vh - 400px)' }}>
 
                 <div className="text-center" style={{ fontFamily: "'VT323', sans-serif" }}>
                     <div className="flex items-center justify-center p-4">
@@ -67,6 +67,7 @@ const Contact = () => {
                                         <input
                                             type="text"
                                             name="name"
+                                            autoComplete="off"
                                             className="
                                                 block 
                                                 w-full 
@@ -91,6 +92,7 @@ const Contact = () => {
                                         <input
                                             type="email"
                                             name="email"
+                                            autoComplete="off"
                                             className="
                                                 block 
                                                 w-full 
@@ -115,6 +117,7 @@ const Contact = () => {
                                         <textarea
                                             name="message"
                                             rows="5"
+                                            autoComplete="off"
                                             className="
                                                 block 
                                                 w-full 

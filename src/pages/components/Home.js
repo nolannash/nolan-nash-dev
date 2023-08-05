@@ -15,7 +15,7 @@ const Home = () => {
       outline-double 
       outline-8 
       outline-red-400 
-      bg-pink-400 
+      bg-pink-300 
       bg-opacity-75" 
       style={{ fontFamily: "'VT323', sans-serif"}}>
 

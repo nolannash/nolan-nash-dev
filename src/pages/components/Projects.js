@@ -17,7 +17,7 @@ const Projects = () => {
         outline-sky-700 
         border-4 
         border-sky-700 
-        bg-blue-400 
+        bg-blue-300 
         bg-opacity-75 
         shadow-2xl 
         shadow-pink-400/30 `}
@@ -27,7 +27,7 @@ const Projects = () => {
             Portfolio
         </h1>
 
-        <div className="overflow-auto" style={{ maxHeight: 'calc(100vh - 400px)' }}>
+        <div className="overflow-auto shadow-2xl" style={{ maxHeight: 'calc(100vh - 400px)' }}>
 
         <p className="text-3xl text-center" style={{ fontFamily: "'VT323', sans-serif" }}>
         test 
