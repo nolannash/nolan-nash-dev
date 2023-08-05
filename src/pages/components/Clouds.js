@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from "./clouds.module.css";
+import * as styles from "../../styles/clouds.module.css";
 
 const Clouds = ({ cloudsPaused }) => {
   const cloudStyles = {
