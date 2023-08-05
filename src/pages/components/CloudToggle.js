@@ -8,7 +8,7 @@ export const CloudButton = ({ cloudsPaused, className, setCloudsPaused }) => {
   };
 
   return (
-    <div className="box">
+    <div className="box drop-shadow-2xl" style={{ fontFamily: "'Lexend Variable', sans-serif" }}>
 
       {cloudsPaused === false && (
         <div className={`cloud-button state-on ${className}`} onClick={handleToggle}>
