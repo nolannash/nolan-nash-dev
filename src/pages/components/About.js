@@ -13,7 +13,7 @@ const About = () => {
             rounded-3xl 
             p-8 
             outline-double 
-            outline-4 
+            outline-4
             outline-emerald-800
             border-8 
             border-emerald-800 
