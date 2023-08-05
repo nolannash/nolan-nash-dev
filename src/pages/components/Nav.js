@@ -1,10 +1,10 @@
 import React from 'react';
 import  CloudButton  from './CloudToggle';
-import '@fontsource-variable/lexend';
+
 
 const NavBar = ({ setSelected, cloudsPaused, setCloudsPaused }) => {
   return (
-    <header className=" justify-center object-center tracking-wider" style={{ fontFamily: "'VT323', sans-serif" }}>
+    <header className=" justify-center object-center tracking-wider z-10" style={{ fontFamily: "'VT323', sans-serif" }}>
       <div className="container mx-auto flex flex-col items-center justify-between pb-5">
 
         <nav className="md:m-auto flex flex-wrap items-center justify-center text-4xl p-4">

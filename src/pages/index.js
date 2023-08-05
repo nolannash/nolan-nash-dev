@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import '@fontsource/vt323';
+import '@fontsource-variable/lexend';
 
 const HomePage = () => {
   const [selected, setSelected] = React.useState('home');
@@ -34,7 +35,7 @@ const HomePage = () => {
   };
 
   return (
-    <main className="flex flex-col min-h-screen bg-gradient-to-b from-indigo-900 via-indigo-500 to-pink-300">
+    <main className="flex flex-col min-h-screen bg-gradient-to-b from-indigo-900 via-indigo-500 to-fuchsia-300">
       <div className="flex-grow">
         <div className="text-white ">
           <div className="flex title-font font-medium justify-center mb-4 pt-6 tracking-wide" style={{ fontFamily: "'VT323', sans-serif"}}>
@@ -46,7 +47,7 @@ const HomePage = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="3"
-              className="w-16 h-14 text-white p-1 rounded-full m-4"
+              className="w-16 h-15 text-white p-1 rounded-full m-4"
               viewBox="0 0 24 24"
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
@@ -59,10 +60,10 @@ const HomePage = () => {
             cloudsPaused={cloudsPaused}
           />
         </div>
-        <div className="justify-center w-2/3 m-auto h-2/3">
+        <div className="justify-center w-2/3 m-auto h-2/3 z-10">
           {displaySelected(selected)}
         </div>
-        <div className="w-full flex-grow position-relative pt-5">
+        <div className="w-full flex-grow position-relative pt-5 z-0">
           <Clouds cloudsPaused={cloudsPaused} handleCloudsToggle={handleCloudsToggle} />
         </div>
       </div>
