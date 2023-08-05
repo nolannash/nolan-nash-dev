@@ -55,16 +55,6 @@ const NavBar = ({ setSelected, cloudsPaused, setCloudsPaused }) => {
           </button>
 
           <button className="
-          mr-5 
-          hover:bg-amber-300
-          focus:bg-orange-400
-          rounded-full 
-          p-3" 
-          onClick={() => setSelected('blog')}>
-            Blog
-          </button>
-
-          <button className="
           hover:bg-violet-400 
           focus:bg-fuchsia-950 
           rounded-full 

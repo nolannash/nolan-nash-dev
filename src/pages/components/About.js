@@ -16,7 +16,7 @@ const About = () =>{
             outline-emerald-800
             border-8 
             border-emerald-800 
-            bg-lime-300 
+            bg-lime-400 
             bg-opacity-75 
             shadow-2xl 
             shadow-emerald-800/30" 

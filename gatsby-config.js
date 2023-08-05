@@ -6,9 +6,9 @@ module.exports = {
     title: `Nolan Nash Dev`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-postcss","gatsby-plugin-image",
-  "gatsby-plugin-sharp",
-  // {
-  //   resolve: `gatsby-plugin-manifest`,}
-]
+  plugins: [
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 };

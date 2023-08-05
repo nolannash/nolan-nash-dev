@@ -15,10 +15,8 @@ const Home = () => {
       outline-double 
       outline-8 
       outline-red-400 
-      bg-pink-300 
-      bg-opacity-75 
-      shadow-2xl 
-      shadow-pink-400/30" 
+      bg-pink-400 
+      bg-opacity-75" 
       style={{ fontFamily: "'VT323', sans-serif"}}>
 
     <h1 className="
@@ -32,9 +30,9 @@ const Home = () => {
     <br/>Welcome to my website!
     </h1>
 
-    <div className="overflow-auto shadow-2xl shadow-rounded rounded-xl shadow-pink-500/40" style={{ maxHeight: 'calc(100vh - 400px)' }}>
+    <div className="overflow-auto" style={{ maxHeight: 'calc(100vh - 400px)' }}>
 
-      <p className="text-3xl text-center" style={{ fontFamily: "'VT323', sans-serif" }}>
+      <p className="text-3xl text-center text-semibold" style={{ fontFamily: "'VT323', sans-serif" }}>
         My goal is to provide simple, innovative, reusable and relaible code.
       </p>
 

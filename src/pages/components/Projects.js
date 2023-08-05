@@ -17,7 +17,7 @@ const Projects = () => {
         outline-sky-700 
         border-4 
         border-sky-700 
-        bg-blue-300 
+        bg-blue-400 
         bg-opacity-75 
         shadow-2xl 
         shadow-pink-400/30 `}
