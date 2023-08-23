@@ -29,7 +29,7 @@ const About = () => {
         gap-6 
         shadow-2xl 
         inner-shadow-2xl" 
-        style={{ maxHeight: 'calc(100vh - 400px)', paddingLeft: "3rem", paddingRight: "3rem" }}>
+        style={{ maxHeight: 'calc(100vh - 350px)', paddingLeft: "3rem", paddingRight: "3rem" }}>
 
         <div className="text-center 
         hover:bg-green-400 

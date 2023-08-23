@@ -51,8 +51,8 @@ const HomePage = () => {
           title-font 
           font-medium 
           justify-center 
-          mb-4 
-          pt-6 
+
+          mt-6 
           tracking-wide" 
           style={{ fontFamily: "'VT323', sans-serif"}}>
 

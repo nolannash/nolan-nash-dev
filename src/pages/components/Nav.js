@@ -25,7 +25,7 @@ const NavBar = ({ setSelected, cloudsPaused, setCloudsPaused }) => {
         items-center 
         justify-center 
         text-4xl 
-        p-4">
+        p-2">
 
           <button className="
           mr-5 
