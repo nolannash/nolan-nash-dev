@@ -21,13 +21,13 @@ const ProjectObjects = [
     },
     {
         name: 'Flat Ticket',
-        technologies: ['Javascript'],
-        description: 'App',
-        blurb: 'App',
+        technologies: ['Javascript','Python','React','Flask','SQL','Flask SQLAlchemy','Flask bcrypt','Flask Faker','Formik','semantic-ui','Yup'],
+        description: 'Application intended to allow users to browse concerts by a variety of different factors and then add them to an attending list. Users are able to view Concerts by artist, by tour, date and location (all of that data was created using Faker). Users can add and remove a concert from their list of planned attendances.',
+        blurb: 'A way to view a concerts, tours, venues in a variety of views. Create a list of the shows you WANT to see.',
         link: 'https://github.com/montaguehb/phase-4-full-stack-project',
         status: 'Complete (not deployed)',
         logo: 'test',
-        notes_and_thoughts: 'test',
+        notes_and_thoughts: 'This was the second to last project I created at Flatiron and honestly I am not super proud of it. There were a lot of issues that could have been avoided such as the images for the tours, the view (based on what youre looking at) and other stuff. It works though which is something I still am astounded at considering I started this project having coded for just 10 weeks.',
     },
     {
         name: 'Dev.exe(cute)',

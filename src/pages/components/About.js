@@ -63,16 +63,10 @@ const About = () => {
             <details>
             <summary className="p-4 text-5xl">Technologies and Skills</summary>
             <div className="text-3xl p-4">
-                <ul className="list-none list-inside ">
+                <ul className="list-none list-inside text-start ">
                     <li className="p-4">
-                        <details>
-                            <summary>Technologies</summary>
-                                <ul>
-                                    <li className="p-2">
-                                        <details>
-                                            <summary>
-                                                Front End
-                                            </summary>
+                        <details className="">
+                            <summary>Technical Skills</summary>
                                                 <ul>
                                                     <li className="p-2">React.js</li>
                                                     <li className="p-2">Tailwind CSS</li>
@@ -81,25 +75,30 @@ const About = () => {
                                                     <li className="p-2">Material UI</li>
                                                     <li className="p-2">HTML </li>
                                                     <li className="p-2">General CSS </li>
+                                                    <li className="p-2">Python</li>
+                                                    <li className="p-2">Flask (with SQLAlchemy)</li><li className="p-2">AWS Cloud 1</li>
+                                                    <li className="p-2">General Cloud Knowledge and Skills</li>
                                                 </ul>
-                                        </details></li>
-                                    <li className="p-2">
-                                        <details>
-                                            <summary>Back End</summary>
-                                                <ul>
-                                                    <li className="p-2">item 1</li>
-                                                    <li className="p-2">item 1</li>
-                                                </ul>
-                                        </details>
-                                    </li>
-                                </ul>
                             </details>
                         </li>
                         <li>
-                            <details>
-                                <summary>General Skills</summary>
+                            <details className="p-4">
+                                <summary >Soft Skills</summary>
                                     <ul>
-                                        <li></li>
+                                        <li className="p-2" >
+                                            Fast Leaner
+                                        </li>
+                                        
+                                        <li className="p-2" >
+                                            Multiple years of customer service experience makes me great at communicating with customers and peers
+                                        </li>
+                                        <li className="p-2" >
+                                            Leadership experience both in a sales capacity as a floor manager and in a technical capacity leading groups at Flatiron School
+                                        </li>
+
+                                        <li className="p-2">
+                                            Creative Thinker
+                                        </li>            
                                     </ul>
                             </details>
                         </li>
@@ -119,7 +118,7 @@ const About = () => {
             <summary className="p-4 text-5xl">Current Happenings</summary>
             <div className="text-3xl p-4 divide-y divide-emerald-800">
 
-            <ul className="list-none list-inside ">
+            <ul className="list-none list-inside text-start">
                     <li className="p-4">
                         <details>
                             <summary>In Progress</summary>
@@ -135,7 +134,7 @@ const About = () => {
                             <details>
                                 <summary>Planned Projects</summary>
                                     <ul>
-                                        <li></li>
+                                        <li> No Real Projects In The Works Right Now. I am currently getting a couple of cloud certifications (one from The CloudBootCamp, and one from AWS)</li>
                                     </ul>
                             </details>
                         </li>
