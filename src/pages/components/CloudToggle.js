@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
-import "../../styles/cloudToggle.module.css";
 
+import "../../styles/cloudToggle.module.css";
 const CloudButton = ({ cloudsPaused, className, setCloudsPaused }) => {
   const handleToggle = () => {
     setCloudsPaused();

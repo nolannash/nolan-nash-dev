@@ -74,8 +74,13 @@ const About = () => {
                                                 Front End
                                             </summary>
                                                 <ul>
-                                                    <li className="p-2">item 1</li>
-                                                    <li className="p-2">item 1</li>
+                                                    <li className="p-2">React.js</li>
+                                                    <li className="p-2">Tailwind CSS</li>
+                                                    <li className="p-2">Next.js</li>
+                                                    <li className="p-2">Semantic UI</li>
+                                                    <li className="p-2">Material UI</li>
+                                                    <li className="p-2">HTML </li>
+                                                    <li className="p-2">General CSS </li>
                                                 </ul>
                                         </details></li>
                                     <li className="p-2">
@@ -120,7 +125,7 @@ const About = () => {
                             <summary>In Progress</summary>
                                 <ul>
 
-                                    <li className="p-2">item 1</li>
+                                    <li className="p-2">I am Looking for a job! Feel free to reach out to me with offers, contacts, information etc.</li>
                                     <li className="p-2">item 1</li>
 
                                 </ul>
@@ -138,7 +143,8 @@ const About = () => {
                             <details>
                                 <summary>Learning Goals</summary>
                                     <ul>
-                                        <li></li>
+                                        <li>I am currently enrolled in a bootcamp with The CloudBootCamp learning about cloud development and multicloud</li>
+                                        <li>I have also completed several courses via W3 schools on AWS development and AWS development with python. Until I have more money I will likely not be able to actually earn any of the certificates</li>
                                     </ul>
                             </details>
                         </li>
@@ -146,7 +152,9 @@ const About = () => {
                             <details>
                                 <summary>Life Stuff</summary>
                                     <ul>
-                                        <li></li>
+                                        <li>I recently moved to Oakland CA from Seattle WA</li>
+                                        <li>I am currently learning the crochet style of arumiguri in my spare time</li>
+
                                     </ul>
                             </details>
                         </li>
