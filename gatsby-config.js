@@ -6,6 +6,9 @@ module.exports = {
     title: `Nolan Nash Dev`,
     siteUrl: `https://www.yourdomain.tld`
   },
+  flags: {
+    DEV_SSR: true
+  },
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
