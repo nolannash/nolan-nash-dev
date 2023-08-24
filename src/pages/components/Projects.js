@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./ProjectCard"; // Use the correct relative path
 
-const ProjectArr = [
+const projectArr = [
     {
         name: 'Note Nest',
         technologies: ['Javascript', 'MongoDB', 'Next.js', 'Tailwind CSS', 'Google Authentication', 'bcrypt.js', 'Router'],
@@ -49,19 +49,19 @@ const ProjectArr = [
 
 const Projects = () => {
     const [isHovered, setIsHovered] = useState(false);
-    const projects = ProjectArr;
+    const projects = projectArr;
 
     return (
-        <div className={`relative top-0 left-0 h-full items-center bg-transparent rounded-3xl outline-double outline-8 outline-sky-700 border-4 border-sky-700 shadow-2xl shadow-pink-400/30 mt-0 md:mt-2 lg:mt-1`} style={{ fontFamily: "'VT323', sans-serif" }}>
-            <div
-                className={`text-6xl font-bold text-center text-white glow-effect transition-all transition-all`}
+        <div className="flex flex-col items-center justify-center h-full bg-transparent rounded-3xl outline-double outline-8 outline-sky-700 border-4 border-sky-700 shadow-2xl shadow-pink-400/30 mt-0 md:mt-2 lg:mt-1" style={{ fontFamily: "'VT323', sans-serif" }}>
+            <button
+                className="text-6xl font-bold text-center text-white glow-effect transition-all"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <h1>Portfolio</h1>
-            </div>
+            </button>
             {isHovered && (
-                <div className={`text-center visible opacity-100 mb-4 text-xl transition-opacity duration-300`}>
+                <div className="text-center visible opacity-100 mb-4 text-xl transition-opacity duration-300">
                     <p>Hi there and welcome to my portfolio. Please feel free to take a look at my projects. I am always looking to start new projects.</p>
                 </div>
             )}
