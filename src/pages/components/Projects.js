@@ -82,15 +82,7 @@ const Projects = () => {
                 <details className=" text-xl pl-8 pb-2"><summary><strong className="text-3xl">Personal Notes/Thoughts/Upcoming Changes </strong></summary>{project.notes_and_thoughts}</details>
             </details>
 
-            <style>
-                {`
-                    details > summary::-webkit-details-marker {
-                        display: initial;
-                        margin-right: 0.5em; 
-                        font-size: inherit; 
-                    }
-                `}
-            </style>
+
         </div>)}
 
         return (
